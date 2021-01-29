@@ -1,0 +1,19 @@
+{
+  "name": "garry-the-snail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "dotenv": "^8.2.0",
+    "merge-images": "^2.0.0",
+    "node-cron": "^2.0.3",
+    "twitter-lite": "^0.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
