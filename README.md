@@ -31,3 +31,5 @@ The "goals" array must always contain one or multiple objects structered in the 
 `"currentCount":"XXX"` - your last follower count *(will be updated automatically after running the script)*
 ## Additional information
 * The program was built using JavaScript, Node.js, [Merge Images](https://www.npmjs.com/package/merge-images) and [Twitter Lite](https://www.npmjs.com/package/twitter-lite).
+## Result
+![Twitter Banner Image](https://pbs.twimg.com/profile_banners/4275789017/1611926218/1500x500)
