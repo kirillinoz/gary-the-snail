@@ -30,12 +30,12 @@ async function main() {
     const currentCount = JSON.parse(dataJSON).currentCount;
     const goals = JSON.parse(dataJSON).goals
     const goal = goals.find(goal => betweenTwoNumbers(count, goal.start, goal.end))
-    if(count !== currentCount){
+    if(count !== +currentCount){
         fs.writeFileSync('data.json', JSON.stringify({currentCount: count, goals}))
         const b64 = await mergeImages([
             {src: './img/banner.png', x: 0, y: 0}, 
             {src: `./img/goals/${goal.img}.png`, x: 0, y: 0}, 
-            {src: './img/moving.png', x: scale(count, goal.start, goal.end, 186.5 - 49.5, 1312.5 - 49.5), y: 205}
+            {src: './img/moving.png', x: scale(count, +goal.start, +goal.end, 186.5 - 49.5, 1312.5 - 49.5), y: 205}
         ], {Canvas: Canvas, Image: Image})
         let base64Data = b64.replace(/^data:image\/png;base64,/, "");
         await client.post("account/update_profile_banner", {
