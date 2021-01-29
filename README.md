@@ -25,11 +25,17 @@ The "goals" array must always contain one or multiple objects structered in the 
 
 `"end":XXX,` - until which number should the snail move *(maximal follower number)*
 
-`"img":"XXX"}` - which image under `img/goals` should be selected for this range *(used for the check)*
+`"img":"XXX"}` - which image under `img/goals` should be selected for this range *(image will be maped on top of the banner)*
 
 ---
 `"currentCount":"XXX"` - your last follower count *(will be updated automatically after running the script)*
+##Create your own goals
+You can use existing goal-images as a reference.
+* Open `/img/banner.png` in your photo-editing software (f.ex. Photoshop)
+* Draw/write on top of the banner on a separate layer
+* Export only the separate layer into `/img/goals/` folder *(image size: 1500x500px)*
+* Don't forget to create a new object for the goals array in `data.json` file
 ## Additional information
-* The program was built using JavaScript, Node.js, [Merge Images](https://www.npmjs.com/package/merge-images) and [Twitter Lite](https://www.npmjs.com/package/twitter-lite).
+The program was built using JavaScript, Node.js, [Merge Images](https://www.npmjs.com/package/merge-images) and [Twitter Lite](https://www.npmjs.com/package/twitter-lite).
 ## Result
 ![Twitter Banner Image](https://pbs.twimg.com/profile_banners/4275789017/1611926218/1500x500)
