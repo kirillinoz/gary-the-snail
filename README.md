@@ -29,7 +29,7 @@ The "goals" array must always contain one or multiple objects structered in the 
 
 ---
 `"currentCount":"XXX"` - your last follower count *(will be updated automatically after running the script)*
-##Create your own goals
+## Create your own goals
 You can use existing goal-images as a reference.
 * Open `/img/banner.png` in your photo-editing software (f.ex. Photoshop)
 * Draw/write on top of the banner on a separate layer
