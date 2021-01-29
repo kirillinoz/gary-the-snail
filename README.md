@@ -1,6 +1,6 @@
 # Garry the Snail
 ## About
-It visualize your Twitter follower count on your Twitter banner in a creative way. A snail will move along the road between two signs. The snail is representing your follower count and signs are representing the range of followers you specify.
+It visualizes your Twitter follower count on your Twitter banner in a creative way. A snail will move along the road between two signs. The snail is representing your follower count and signs are representing the range of followers you specify.
 ## Installation
 * Download the folder
 * Run `npm install`
