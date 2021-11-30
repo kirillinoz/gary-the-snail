@@ -23,7 +23,7 @@ async function main() {
         bearer_token: response.access_token
     })
     const data = await app.get("followers/ids", {
-        screen_name: "Inkuantum"
+        screen_name: "kirillinoz"
     })
     const count = await data.ids.length
     const dataJSON = fs.readFileSync('data.json')
@@ -35,7 +35,7 @@ async function main() {
         const b64 = await mergeImages([
             {src: './img/banner.png', x: 0, y: 0}, 
             {src: `./img/goals/${goal.img}.png`, x: 0, y: 0}, 
-            {src: './img/moving.png', x: scale(count, +goal.start, +goal.end, 186.5 - 49.5, 1312.5 - 49.5), y: 205}
+            {src: './img/moving.png', x: scale(count, +goal.start, +goal.end, 176.5 - 83, 1302.5 - 83), y: 154}
         ], {Canvas: Canvas, Image: Image})
         let base64Data = b64.replace(/^data:image\/png;base64,/, "");
         await client.post("account/update_profile_banner", {
